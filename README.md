@@ -9,6 +9,8 @@ The chapters in this section include the following:
 * Chapter 1, introduction to Performace in Go.
 
 * Chapter 2, Data Structures and Algorithms.
+  -- Benchmark example: 
+  --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4
 
 * Chapter 3, Understanding Concurrency.
 
