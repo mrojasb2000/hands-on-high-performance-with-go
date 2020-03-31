@@ -12,12 +12,12 @@ The chapters in this section include the following:
   -- Benchmark example: 
   --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4
 
-  goos: darwin<br>
+  `goos: darwin<br>
   goarch: amd64<br>
   pkg: github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test<br>
   BenchmarkHello-4        24789703                88.4 ns/op            32 B/op          1 allocs/op<br>
   PASS<br>
-  ok      github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test   4.712s<br>
+  ok      github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test   4.712s<br>`
 
   GOOS     : Operating System<br>
   GOARCH   : Architecture<br>
