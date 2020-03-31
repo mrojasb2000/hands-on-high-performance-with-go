@@ -12,20 +12,20 @@ The chapters in this section include the following:
   -- Benchmark example: 
   --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4
 
-  goos: darwin
-  goarch: amd64
-  pkg: github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test
-  BenchmarkHello-4        24789703                88.4 ns/op            32 B/op          1 allocs/op
-  PASS
-  ok      github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test   4.712s
+  goos: darwin<br>
+  goarch: amd64<br>
+  pkg: github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test<br>
+  BenchmarkHello-4        24789703                88.4 ns/op            32 B/op          1 allocs/op<br>
+  PASS<br>
+  ok      github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test   4.712s<br>
 
-  GOOS     : Operating System
-  GOARCH   : Architecture
-  -4       : The number process of GOMAXPROCS that were used to execute.
-  24789703 : The number of times out loop ran to gather the necesary data.
-  88.4 ns/op : The speed per loop during out test.
-  PASS     : Indicates the end state of our benchmark run.
-  
+  GOOS     : Operating System<br>
+  GOARCH   : Architecture<br>
+  -4       : The number process of GOMAXPROCS that were used to execute.<br>
+  24789703 : The number of times out loop ran to gather the necesary data.<br>
+  88.4 ns/op : The speed per loop during out test.<br>
+  PASS     : Indicates the end state of our benchmark run.<br>
+
 
 * Chapter 3, Understanding Concurrency.
 
