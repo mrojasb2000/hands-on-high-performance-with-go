@@ -26,12 +26,12 @@ The chapters in this section include the following:
   88.4 ns/op : The speed per loop during out test.<br>
   PASS     : Indicates the end state of our benchmark run.<br>
 
-  h4. Advantages
+  - Advantages
     - Surfaces potential problems before they become unwieldy
     - Helps developers have a deeper understanding of their code
     - Can identify potential bottlenecks in the design and data structures and algorithms stages
 
-  h4. Drawbacks
+  - Drawbacks
     - Needs to be completed on a given cadence for meaningful results
     - Data collation can be difficult
     - Does not always yield a meaningful result for the problem at hand
