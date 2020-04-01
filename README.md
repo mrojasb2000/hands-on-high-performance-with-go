@@ -9,18 +9,12 @@ The chapters in this section include the following:
 * Chapter 1, introduction to Performace in Go.
 
 * Chapter 2, Data Structures and Algorithms.
-  -- Benchmark example: 
-  --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4
-  --- Run: go test -bench=. -count 5 -cpu 1,2,4 > single.txt
+
+  -- Benchmark example: <br>
+  --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4<br>
+  --- Run: go test -bench=. -count 5 -cpu 1,2,4 > single.txt<br>
 
   ![Benchmark execution](images/Benchmark_run.png)
-
-  `goos: darwin<br>
-  goarch: amd64<br>
-  pkg: github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test<br>
-  BenchmarkHello-4        24789703                88.4 ns/op            32 B/op          1 allocs/op<br>
-  PASS<br>
-  ok      github.com/mrojasb2000/hands-on-high-performance-with-go/chapter2/benchmark/benchmark_test   4.712s<br>`
 
   GOOS     : Operating System<br>
   GOARCH   : Architecture<br>
@@ -39,8 +33,8 @@ The chapters in this section include the following:
     - Data collation can be difficult
     - Does not always yield a meaningful result for the problem at hand
 
--- Benchmark comparation: 
-  --- Run: benchstat -html -sort -delta single/single.txt multi/multi.txt > out.html
+ -- Benchmark comparation: 
+ --- Run: benchstat -html -sort -delta single/single.txt multi/multi.txt > out.html
 
 ![Benchmark comparation](images/Benchstat_comparation.png)
 
