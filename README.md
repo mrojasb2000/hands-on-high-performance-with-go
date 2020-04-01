@@ -11,6 +11,9 @@ The chapters in this section include the following:
 * Chapter 2, Data Structures and Algorithms.
   -- Benchmark example: 
   --- Run: go test -bench=. -benchtime 2s -count 2 -benchmem -cpu 4
+  --- Run: go test -bench=. -count 5 -cpu 1,2,4 > single.txt
+
+  ![Benchmark execution](images/Benchmark_run.png)
 
   `goos: darwin<br>
   goarch: amd64<br>
@@ -36,6 +39,12 @@ The chapters in this section include the following:
     - Data collation can be difficult
     - Does not always yield a meaningful result for the problem at hand
 
+-- Benchmark comparation: 
+  --- Run: benchstat -html -sort -delta single/single.txt multi/multi.txt > out.html
+
+![Benchmark comparation](images/Benchstat_comparation.png)
+
+
 
 
 
@@ -44,3 +53,4 @@ The chapters in this section include the following:
 * Chapter 4, STL Algorithm Equivalents in Go.
 
 * Chapter 5, Matrix and Vector Computation in Go.
+
